@@ -12,8 +12,8 @@ export  const Header = () => {
               <NavLink href="/" name="logo" />
             </span>
             <nav className={ styles.nav }>
-              <NavLink href="/" name="アバウト" />
-              <NavLink href="/contact" name="コンタクト" />
+              <NavLink href="/" name="About" />
+              <NavLink href="/contact" name="Contact" />
             </nav>
           </div>
         </header>

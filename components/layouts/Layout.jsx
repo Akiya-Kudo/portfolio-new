@@ -1,16 +1,15 @@
-import Head from 'next/head';
 import React from 'react'
 import { Header } from './Header'
+import styles from '../../styles/Pages.module.css';
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Head>
-        {/* <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet"/> */}
-      </Head>
       <Header/>
-      <main>{children}</main>
+      <div className={ styles.backBox }>
+        <div className={ styles.cssSelector }></div>
+      </div>
+        <main>{children}</main>
     </>
   );
 }
