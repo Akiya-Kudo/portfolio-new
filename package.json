@@ -14,10 +14,16 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.54.9",
-    "styled-components": "^5.3.5"
+    "sharp": "^0.31.0",
+    "styled-components": "^5.3.5",
+    "swiper": "^8.3.2"
   },
   "devDependencies": {
     "eslint": "8.23.0",
     "eslint-config-next": "12.2.5"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/Akiya-Kudo/portfolio-new.git",
+  "author": "Akiya-Kudo <k.akiya07@gmail.com>",
+  "license": "MIT"
 }
