@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { SText } from '../components/elements/index.jsx';
 import Karusel from '../components/elements/Karusel.jsx';
 import Section from '../components/Section.jsx';
+import Skill from '../components/Skill.jsx';
 import Title from '../components/Title.jsx';
 import Top from '../components/Top.jsx';
 import styles from '../styles/Home.module.scss';
@@ -17,28 +18,34 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Top />
+
+
       <Section>
         <Title name="History"/>
         <div className={ styles.hisList }>
           <SText>2017　埼玉県和光国際高校＿入学</SText>
           <SText>2020　青山学院大学 国際政治経済学部 国際経済学科＿入学</SText>
-          <SText>2020　埼玉から練馬の光が丘＿越す</SText>
-          <SText>2022　世田谷の明大前＿越す</SText>
+          <SText>2020　埼玉から練馬の光が丘に引っ越す</SText>
+          <SText>2022　世田谷の明大前に引っ越す</SText>
           <SText>2022　中川ゼミ（統計/データサイエンス)＿入ゼミ</SText>
         </div>
       </Section>
+
+
       <Section>
         <Title name="Works"/>
         <div className={ styles.worList }>
           <Karusel />
         </div>
       </Section>
+
+
       <Section>
         <Title name="Skills"/>
-        <div className={ styles.Skill }>
-          <div className={ styles.SkillList }>
-
-          </div>
+        <div className={ styles.skillList }>
+          <Skill langName="PHP / Laravel" myLevel="MVCモデルでのアプリケーションを作成しました" image="php" />
+          <Skill langName="React / Next.js" myLevel="このサイトに使用しました。" image="react"/>
+          <Skill langName="Python" myLevel="ゼミで使っています。" image="python"/>
         </div>
       </Section>
     </>
