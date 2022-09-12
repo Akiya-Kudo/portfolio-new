@@ -1,8 +1,10 @@
 // import Swiper core and required modules
-// import React, { useRef } from 'react';
+import React from 'react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
+import { SAppText, SAppName } from '.';
+import styles from './Karusel.module.scss';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -11,34 +13,38 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 const Karusel = () => {
-
-//   const prevRef = useRef(null);
-//   const nextRef = useRef(null);
-
   return (
     <Swiper
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
-      slidesPerView={2}
+      slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
 
-    //   onInit={(swiper) => {
-    //     swiper.params.navigation.prevEl = prevRef.current;
-    //     swiper.params.navigation.nextEl = nextRef.current;
-    //     swiper.navigation.init();
-    //     swiper.navigation.update();
-    //   }}
     >
-      <SwiperSlide><a href="https://enigmatic-sierra-06702.herokuapp.com"><Image src="/DeKiRouter.png" alt="" height={350} width={350}/></a></SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      {/* <div ref={prevRef}>Prev</div>
-      <div ref={nextRef}>Next</div> */}
+      <SwiperSlide>
+        <a href="https://enigmatic-sierra-06702.herokuapp.com" target="_blank" rel="noopener noreferrer">
+            <Image src="/dekirouter.png" alt="" height={400} width={700} className={ styles.Image }/>
+            <SAppName className={ styles.title }>DeKi Router</SAppName>
+        </a>
+        <a href="https://github.com/Akiya-Kudo/TaskClear" className={ styles.gitLink }>
+            <Image src="/github-icon.png" alt="" height={20} width={20} className={ styles.gitIcon }/>
+        </a>
+        <SAppText>目標管理ツールを作ってみました。計画立てることが好きな方はぜひ使ってみて下さい。( PHP / Laravel )</SAppText>
+        <br />
+      </SwiperSlide>
+      <SwiperSlide>
+        <a href="https://github.com/Akiya-Kudo/pixabay-clone-app" target="_blank" rel="noopener noreferrer">
+            <Image src="/pixabay.png" alt="" height={400} width={700} className={ styles.Image }/>
+            <SAppName className={ styles.title }>Pixabay Clone App</SAppName>
+        </a>
+        <SAppText>無料画像サイトPixabayからAPIで画像を取得しています。( React / Pixabay API )</SAppText>
+        <br />
+      </SwiperSlide>
     </Swiper>
   );
 }

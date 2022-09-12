@@ -1,0 +1,29 @@
+.formContainer {
+
+
+    .contactForm {
+
+        display: flex;
+        flex-direction: column;
+
+        .inputs {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 1rem;
+
+            input {
+                background: white;
+                opacity: 0.8;
+                border-radius: 0.3rem;
+                margin-left: 1rem;
+            }
+
+            textarea {
+                background: white;
+                opacity: 0.8;
+                border-radius: 0.3rem;
+            }
+        }
+    }
+}

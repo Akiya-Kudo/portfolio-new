@@ -5,8 +5,12 @@
 .worList {
   height: 100%;
   width: 50%;
-  margin: 7%;
+  margin: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.skillList {
+  margin: 0 5%;
 }/*# sourceMappingURL=Home.module.css.map */

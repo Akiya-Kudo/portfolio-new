@@ -1,0 +1,22 @@
+.Image {
+  border-radius: 50px;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.Image:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.gitLink, .title {
+  display: inline-block;
+}
+
+.gitLink {
+  position: relative;
+  top: 2px;
+}
+
+.gitIcon {
+  margin-top: 10px;
+}/*# sourceMappingURL=Karusel.module.css.map */
