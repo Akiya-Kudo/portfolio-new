@@ -3,17 +3,15 @@ import styled from "styled-components";
 export const SAtagu = styled.a`
     -webkit-text-stroke: .6px #000;
     color: transparent;
-    font-size: 20px;
+    font-size: 1.5rem;
 
-    height: 40px;
-    width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
+    margin-left: 10%;
     transition: .3s;
     :hover {
-        font-size: 30px;
+        font-size: 2rem;
         color: black;
     }
 `;
@@ -36,11 +34,11 @@ export const SAppName = styled.div`
 
     -webkit-text-stroke: .6px #000;
     color: transparent;
-    font-size: 20px;
+    font-size: 1.4rem;
 
     transition: .3s;
     &:hover {
-        font-size: 30px;
+        font-size: 1.8rem;
         color: black;
     }
 `
@@ -52,7 +50,7 @@ export const SLangName = styled.div`
 
     -webkit-text-stroke: .6px #000;
     color: transparent;
-    font-size: 30px;
+    font-size: 2rem;
 `
 
 export const SSubmit = styled.input`
@@ -62,11 +60,11 @@ export const SSubmit = styled.input`
 
     -webkit-text-stroke: .6px #000;
     color: transparent;
-    font-size: 20px;
+    font-size: 1.4rem;
 
     transition: .3s;
     &:hover {
-        font-size: 30px;
+        font-size: 1.8rem;
         color: black;
     }
 `

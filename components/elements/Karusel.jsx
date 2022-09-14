@@ -31,7 +31,7 @@ const Karusel = () => {
             <Image src="/dekirouter.png" alt="" height={400} width={700} className={ styles.Image }/>
             <SAppName className={ styles.title }>DeKi Router</SAppName>
         </a>
-        <a href="https://github.com/Akiya-Kudo/TaskClear" className={ styles.gitLink }>
+        <a href="https://github.com/Akiya-Kudo/TaskClear" className={ styles.gitLink } target="_blank" rel="noopener noreferrer">
             <Image src="/github-icon.png" alt="" height={20} width={20} className={ styles.gitIcon }/>
         </a>
         <SAppText>目標管理ツールを作ってみました。計画立てることが好きな方はぜひ使ってみて下さい。( PHP / Laravel )</SAppText>
