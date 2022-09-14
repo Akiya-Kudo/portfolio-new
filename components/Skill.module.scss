@@ -1,7 +1,12 @@
 .skill {
     margin: 10% 1%;
     display: flex;
+    justify-content: center;
 }
 
-.texts {
-}
+@media screen and (max-width:390px) {
+    .skill {
+        flex-direction: column;
+        align-items: center;
+    }
+  }

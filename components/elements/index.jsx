@@ -20,6 +20,7 @@ export const SText = styled.div`
     padding: 1rem;
     font-size: 1rem;
     white-space:wrap;
+    margin: .5rem;
 `;
 
 export const SAppText = styled.div`

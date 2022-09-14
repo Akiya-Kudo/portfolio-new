@@ -7,74 +7,134 @@
 
 }
 
-.title {
-    font-family: "Nico Moji";
-    z-index: 10;
 
-    font-size: 2.7rem;
-    color: transparent;
-    -webkit-text-stroke: 1px #000;
-}
 
 .bord {
     position: absolute;
     width: 100%;
     z-index: -0.5;
-
+    
     .stand {
         position: relative;
         top: 50%;
         left: 50%;
         height: 0;
         width: 0;
-
+        
         .box1 {
             position: absolute;
-            height: 150px;
-            width: 700px;
+            height: auto;
             border: .5px solid;
             transform: translate(-50%, -50%);
-        }
 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .title {
+                font-family: "Nico Moji";
+                z-index: 10;
+                margin: 3rem;
+                text-align: center;
+            
+                color: transparent;
+                -webkit-text-stroke: .5px #000;
+
+                span {
+                    white-space: nowrap;
+                }
+            }
+        }
+        
         .box2 {
             position: absolute;
-            height: 6rem;
-            width: 3rem;
+            height: 8vw;
+            width: 4vw;
             border: .5px solid;
             top: 0;
-            left: 420px;
+            left: 38.5vw;
             transform: translate(-50%, -50%);
         }
-
+        
         .box3 {
             position: absolute;
-            height: 6rem;
-            width: 3rem;
+            height: 8vw;
+            width: 4vw;
             border: .5px solid;
             top: 0;
-            left: -420px;
+            left: -38.5vw;
             transform: translate(-50%, -50%);
         }
-
+        
         .box4 {
             position: absolute;
-            height: 2rem;
-            width: 6rem;
+            height: 3vw;
+            width: 6vw;
             border: .5px solid;
             top: 0;
-            left: 520px;
+            left: 45vw;
             transform: translate(-50%, -50%);
         }
 
         .box5 {
             position: absolute;
-            height: 2rem;
-            width: 6rem;
+            height: 3vw;
+            width: 6vw;
             border: .5px solid;
             top: 0;
-            left: -520px;
+            left:  -45vw;
             transform: translate(-50%, -50%);
         }
     }
 
+}
+
+@media screen and (max-width:340px) {
+    .title {
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width:340px) {
+    .title {
+        font-size: 2.3rem;
+    }
+}
+@media screen and (min-width:1250px) {
+    .title {
+        font-size:4rem;
+    }
+}
+@media screen and (min-width:1600px) {
+    .title {
+        font-size:3.5rem;
+    }
+}
+@media screen and (min-width:2000px) {
+    .title {
+        font-size:3rem;
+    }
+}
+@media screen and (min-width:2700px) {
+    .title {
+        font-size:4rem;
+    }
+}
+
+
+
+@media screen and (max-width:550px) {
+    .box1 {
+        width: 100vw;
+    }
+
+    .box2, .box3, .box4, .box5 {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width:550px) {
+    .box1 {
+        width: 70vw;
+        white-space: nowrap;
+    }
 }
