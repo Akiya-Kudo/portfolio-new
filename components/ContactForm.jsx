@@ -6,9 +6,11 @@ import Image from 'next/image';
 import Popup from './Popup';
 
 const ContactForm = () => {
+
+    // 送信後のポップメッセージ
     const form = useRef();
     const [visibility, setVisibility] = useState(false); 
-    const [popMessage, setPopMessage] = useState('へぉ'); 
+    const [popMessage, setPopMessage] = useState(''); 
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -20,12 +22,22 @@ const ContactForm = () => {
             setVisibility(true);
             setTimeout(() => setVisibility(false), 5000);
 
+            nameRef.current.value = "";
+            mailRef.current.value = ''
+            contentRef.current.value = "";
+
         }, (error) => {
             setPopMessage('送信に失敗しました。恐れ入りますがもう一度送信をお願いします。');
             setVisibility(true);
             setTimeout(() => setVisibility(false), 5000);
+
         });
     };
+
+    // 入力値の変更、取得
+    const nameRef = useRef('');
+    const mailRef = useRef('');
+    const contentRef = useRef('');
 
     return (
         <div className={ styles.formContainer }>
@@ -33,15 +45,15 @@ const ContactForm = () => {
             <form ref={form} onSubmit={sendEmail} className={ styles.contactForm }>
                 <div className={ styles.inputs }>
                     <label>お名前 : name</label>
-                    <input type="text" name="name" required/>
+                    <input type="text" name="name" required ref={ nameRef } />
                 </div>
                 <div className={ styles.inputs }>
                     <label>メールアドレス : Email</label>
-                    <input type="email" name="mail" required/>
+                    <input type="email" name="mail" required ref={ mailRef }/>
                 </div>
                 <div className={ styles.inputs }>
                     <label>内容 : Message</label>
-                    <textarea name="message" required/>
+                    <textarea name="message" required ref={ contentRef }/>
                 </div>
                 <SSubmit type="submit" value="送信 : Submit" />
             </form>
