@@ -37,6 +37,7 @@ const Karusel = () => {
         <SAppText>目標管理ツールを作ってみました。計画立てることが好きな方はぜひ使ってみて下さい。( PHP / Laravel )</SAppText>
         <br />
       </SwiperSlide>
+      
       <SwiperSlide>
         <a href="https://github.com/Akiya-Kudo/pixabay-clone-app" target="_blank" rel="noopener noreferrer">
             <Image src="/pixabay.png" alt="" height={400} width={700} className={ styles.Image }/>

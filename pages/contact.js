@@ -2,7 +2,6 @@ import Head from 'next/head'
 import React from 'react'
 import ContactForm from '../components/ContactForm'
 import Section from '../components/Section'
-import Title from '../components/Title'
 
 const contact = () => {
   return (
@@ -13,8 +12,7 @@ const contact = () => {
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <Section>
-      <Title name="Contact"/>
+    <Section name="Contact">
       <ContactForm />
     </Section>
 
