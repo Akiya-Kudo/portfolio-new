@@ -28,7 +28,7 @@ const Karusel = () => {
     >
       <SwiperSlide>
         <a href="https://enigmatic-sierra-06702.herokuapp.com" target="_blank" rel="noopener noreferrer">
-            <Image src="/dekirouter.png" alt="" height={400} width={700} className={ styles.Image }/>
+            <Image src="/DeKiRouter.png" alt="" height={400} width={700} className={ styles.Image }/>
             <SAppName className={ styles.title }>DeKi Router</SAppName>
         </a>
         <a href="https://github.com/Akiya-Kudo/TaskClear" className={ styles.gitLink } target="_blank" rel="noopener noreferrer">
