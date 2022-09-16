@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Header.module.scss';
 import NavLink from '../elements/NavLink';
+// import Accordion from '../Accordion';
 
 export  const Header = () => {
 
@@ -9,11 +10,13 @@ export  const Header = () => {
         <header className={ styles.header }>
           <div className={ styles.inner }>
             <span className={ styles.logo }>
-              <NavLink href="/" name="logo" />
+              <NavLink href="/">Home</NavLink>
             </span>
             <nav className={ styles.nav }>
-              <NavLink href="/" name="About" />
-              <NavLink href="/contact" name="Contact" />
+            {/* <Accordion> */}
+              <NavLink href="/">About</NavLink>
+            {/* </Accordion> */}
+              <NavLink href="/contact">Contact</NavLink>
             </nav>
           </div>
         </header>

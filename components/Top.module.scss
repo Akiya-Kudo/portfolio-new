@@ -45,7 +45,8 @@
                     transition: .3s;
                     &:hover {
                         font-size: 120%;
-                        color: rgb(194, 180, 255);
+                        color: rgb(219, 211, 255);
+                        text-shadow: rgba(194, 180, 255, 0.3) 1px 0 30px;
                     }
                 }
                 .word2 {
@@ -54,7 +55,8 @@
                     transition: .3s;
                     &:hover {
                         font-size: 120%;
-                        color: rgb(243, 138, 138);
+                        color: rgb(255, 206, 206);
+                        text-shadow: rgba(243, 138, 138, 0.3) 1px 0 30px;
                     }
                 }
                 .word3 {
@@ -63,7 +65,8 @@
                     transition: .3s;
                     &:hover {
                         font-size: 120%;
-                        color: rgb(254, 255, 169);
+                        color: rgb(254, 255, 221);
+                        text-shadow: rgba(254, 255, 169, 0.3) 1px 0 30px;
                     }
                 }
             }

@@ -8,7 +8,7 @@ export const SAtagu = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10%;
+    margin-left: 20%;
     transition: .3s;
     :hover {
         font-size: 2rem;
