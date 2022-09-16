@@ -9,9 +9,9 @@ export  const Header = () => {
       <>
         <header className={ styles.header }>
           <div className={ styles.inner }>
-            <span className={ styles.logo }>
+            {/* <span className={ styles.logo }>
               <NavLink href="/">Home</NavLink>
-            </span>
+            </span> */}
             <nav className={ styles.nav }>
             {/* <Accordion> */}
               <NavLink href="/">About</NavLink>
