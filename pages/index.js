@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Top />
-      <Section name="History">
+      <Section name="History" id="History">
         <div className={ styles.hisList }>
           <SText>2017　埼玉県和光国際高校＿入学</SText>
           <SText>2020　青山学院大学 国際政治経済学部 国際経済学科＿入学</SText>
@@ -27,14 +27,14 @@ export default function Home() {
       </Section>
 
 
-      <Section name="Works">
+      <Section name="Works" id="Works">
         <div className={ styles.worList }>
           <Karusel />
         </div>
       </Section>
 
 
-      <Section name="Skills">
+      <Section name="Skills" id="Skills">
         <div className={ styles.skillList }>
           <Skill langName="PHP / Laravel" myLevel="MVCモデルでのアプリケーションを作成しました" image="php" />
           <Skill langName="React / Next.js" myLevel="このサイトに使用しました。" image="react"/>

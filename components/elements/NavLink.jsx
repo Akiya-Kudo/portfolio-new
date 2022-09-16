@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import { SAtagu } from '../elements';
 
-function NavLink({ href, name }) {
+function NavLink({ href, children }) {
   return (
     <Link href={href} passHref>
-      <SAtagu>{name}</SAtagu>
+      <SAtagu>{children}</SAtagu>
     </Link>
   )
 }

@@ -100,7 +100,7 @@ const Top = () => {
               }
             }}
             whileHover={{ 
-              x: 100,
+              x: 120,
               rotate: 180,
               transition: {
                 duration: .5
@@ -122,7 +122,7 @@ const Top = () => {
               }
             }}
             whileHover={{ 
-              x: -100,
+              x: -120,
               rotate: -180,
               transition: {
                 duration: .5
